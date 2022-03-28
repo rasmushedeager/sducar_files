@@ -19,9 +19,7 @@ void setup() {​​​​
  
 }​​​​​​​​​​​
 ```
-<div style="page-break-after: always; visibility: hidden"> 
-\pagebreak 
-</div>
+<div style="page-break-after: always;"></div>
 # Brug af biblioteket:
 
 ## Indstilling af hastigheden på bilen:
@@ -37,9 +35,7 @@ Tager to parametre som input. Venste- og højre hastighed. Hastigheden er i proc
 car.setCarSpeed(75, -75)  // Notice that you need to call the class 'car' in order to
                           // use this function
 ```
-<div style="page-break-after: always; visibility: hidden"> 
-\pagebreak 
-</div>
+<div style="page-break-after: always;"></div>
 ## Brug af accelerometer:
 ```c
 void DATA::readAccel()  // Reads the accelerometer and stores the values for later use
@@ -57,9 +53,7 @@ float xAxis = cardata.getAccel(x);  // Returns the data from the x axis,
                                     // parameters: [x, y, z]
 ```
 > HUSK AT KALDE LÆSEFUNKTION, ELLERS VIRKER DET IKKE!
-<div style="page-break-after: always; visibility: hidden"> 
-\pagebreak 
-</div>
+<div style="page-break-after: always;"></div>
 ## Brug af tachometer:
 
 ```c
@@ -91,9 +85,7 @@ float distanceDrivenRight = cardata.getDistRight();  // Sets the variabl
  
 cardata.resetTacho();
 ```
-<div style="page-break-after: always; visibility: hidden"> 
-\pagebreak 
-</div>
+<div style="page-break-after: always;"></div>
 ## Aflæsning af batterispænding:
 
 ```c
@@ -106,9 +98,7 @@ Funktionen retunerer batterispændingen.
 float batteryVoltage = cardata.getBatteryVoltage(); // Set the variable to the battery
                                                     // voltage
 ```
-<div style="page-break-after: always; visibility: hidden"> 
-\pagebreak 
-</div>
+<div style="page-break-after: always;"></div>
 ## Aflæsning af linje sensor:
 
 ```c
@@ -144,9 +134,7 @@ Funktionen retunerer tiden der er gået siden arduinoen blev tændt i sekunder
 ```c
 float secsSinceBoot = cardata.t(); // Set the var time in seconds since Arduino boot
 ```
-<div style="page-break-after: always; visibility: hidden"> 
-\pagebreak 
-</div>
+<div style="page-break-after: always;"></div>
 ## Indstilling af lys (Shift Register)
 
 ```c
@@ -164,9 +152,7 @@ car.setShiftReg(0b00001111); // Turn on half of the lights, leave the rest off.
 delay(500);
 car.setShiftReg(0b11110000); // Turn on the other half of the lights, and turn the first ones off again.
 ```
-<div style="page-break-after: always; visibility: hidden"> 
-\pagebreak 
-</div>
+<div style="page-break-after: always;"></div>
 ## Logning af data til SD Kort
 
 
