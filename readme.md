@@ -19,7 +19,7 @@ void setup() {​​​​
  
 }​​​​​​​​​​​
 ```
-
+\pagebreak
 # Brug af biblioteket:
 
 ## Indstilling af hastigheden på bilen:
@@ -35,6 +35,7 @@ Tager to parametre som input. Venste- og højre hastighed. Hastigheden er i proc
 car.setCarSpeed(75, -75)  // Notice that you need to call the class 'car' in order to
                           // use this function
 ```
+\pagebreak
 ## Brug af accelerometer:
 ```c
 void DATA::readAccel()  // Reads the accelerometer and stores the values for later use
@@ -52,7 +53,7 @@ float xAxis = cardata.getAccel(x);  // Returns the data from the x axis,
                                     // parameters: [x, y, z]
 ```
 > HUSK AT KALDE LÆSEFUNKTION, ELLERS VIRKER DET IKKE!
-
+\pagebreak
 ## Brug af tachometer:
 
 ```c
@@ -84,6 +85,7 @@ float distanceDrivenRight = cardata.getDistRight();  // Sets the variabl
  
 cardata.resetTacho();
 ```
+\pagebreak
 ## Aflæsning af batterispænding:
 
 ```c
@@ -96,7 +98,7 @@ Funktionen retunerer batterispændingen.
 float batteryVoltage = cardata.getBatteryVoltage(); // Set the variable to the battery
                                                     // voltage
 ```
-
+\pagebreak
 ## Aflæsning af linje sensor:
 
 ```c
@@ -118,7 +120,7 @@ int sensor4 = cardata.getLineSensor(4); // Set the var to the value of line sens
 > HUSK AT KALDE LÆSEFUNKTION, ELLERS VIRKER DET IKKE!
 
 ![Line Sensor Posistion](https://raw.githubusercontent.com/sdutek/sducar_files/main/line_sensor_posistion.png)
-
+\pagebreak
 ## Aflæsning af tid:
 
 ```c
@@ -130,7 +132,7 @@ Funktionen retunerer tiden der er gået siden arduinoen blev tændt i sekunder
 ```c
 float secsSinceBoot = cardata.t(); // Set the var time in seconds since Arduino boot
 ```
-
+\pagebreak
 ## Indstilling af lys (Shift Register)
 
 ```c
@@ -148,7 +150,7 @@ car.setShiftReg(0b00001111); // Turn on half of the lights, leave the rest off.
 delay(500);
 car.setShiftReg(0b11110000); // Turn on the other half of the lights, and turn the first ones off again.
 ```
-
+\pagebreak
 ## Logning af data til SD Kort
 
 
