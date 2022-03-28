@@ -120,9 +120,7 @@ int sensor4 = cardata.getLineSensor(4); // Set the var to the value of line sens
 > HUSK AT KALDE LÆSEFUNKTION, ELLERS VIRKER DET IKKE!
 
 ![Line Sensor Posistion](https://raw.githubusercontent.com/sdutek/sducar_files/main/line_sensor_posistion.png)
-<div style="page-break-after: always; visibility: hidden"> 
-\pagebreak 
-</div>
+<div style="page-break-after: always;"></div>
 ## Aflæsning af tid:
 
 ```c
